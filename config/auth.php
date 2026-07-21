@@ -42,6 +42,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'api' => [
+            'driver' => 'jwt', // 🚨 Swapped from sanctum to jwt
+            'provider' => 'users',
+        ],
     ],
 
     /*
